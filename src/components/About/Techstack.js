@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiLaravel } from "react-icons/si";
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
 import Node from "../../Assets/TechIcons/Node.svg";
 import ReactIcon from "../../Assets/TechIcons/React.svg";
@@ -20,6 +20,14 @@ function Techstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       
       <Col xs={4} md={2} className="tech-icons">
+        <SiLaravel fontSize={"24px"} />
+        <div className="tech-icons-text">Laravel</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={ReactIcon} alt="react" />
+        <div className="tech-icons-text">React.Js</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <img src={Javascript} alt="javascript" />
         <div className="tech-icons-text">Javascript</div>
       </Col>
@@ -31,10 +39,7 @@ function Techstack() {
         <img src={Node} alt="node" />
         <div className="tech-icons-text">Node.Js</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="react" />
-        <div className="tech-icons-text">React.Js</div>
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <img src={Mongo} alt="mongoDb" />
         <div className="tech-icons-text">Mongo DB</div>
