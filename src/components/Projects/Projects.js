@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import leaf from "../../Assets/Projects/vet-clinic.png";
+import emotion from "../../Assets/Projects/pokedex.jpg";
+import editor from "../../Assets/Projects/heybuddy.jpg";
+import chatify from "../../Assets/Projects/subd.png";
+import suicide from "../../Assets/Projects/padayon.png";
+import bitsOfCode from "../../Assets/Projects/dent-clinic.png";
 
 function Projects() {
   return (
@@ -25,10 +25,18 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Subdivision Management System"
+              description={
+                <>
+                  A subdivision management system built with Laravel, MySQL, Tailwind CSS,
+                  and Leaflet JS. This is a{" "}
+                  <strong className="purple">fully dynamic web application</strong> that
+                  is ready to be sold. It is also responsive across all devices. The
+                  uniqueness of this project lies in its interactive map, which displays
+                  the payment status of each house based on monthly dues or garbage
+                  collection fees.
+                </>
+              }
             />
           </Col>
 
@@ -36,21 +44,14 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Dental Clinic Management System"
+              description={
+                <>
+                  A dental clinic management system built with Laravel, MySQL, and Tailwind CSS. This is a{" "}
+                  <strong className="purple">fully dynamic web application</strong> that
+                  is ready to be sold. This project includes features for managing patient records, appointments, and billing.
+                </>
+              }
             />
           </Col>
 
@@ -58,21 +59,31 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Veterinary Management System"
+              description="A veterinary management system built with PHP, MySQL, JavaScript, and CSS. This project includes features for managing client's pet records, appointments, billing, and automated email reminder of pet's vaccination booster."
+             
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="HeyBuddy!"
+              description="HeyBuddy! is a mobile application built with React Native and Firebase that provides a platform for users to connect and chat through unexpected encounters. The app's purpose is to have a unexpected encounter with their friends through gps. The app includes features such as real-time chat, and a notification of a buddy is near you."
+                          
+            />
+          </Col>
+
+          
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Padayon Turismo"
+              description="A travel Itenerary website built with React, Node.js, and MongoDB. This project includes features for Itenerary, Maps, and all the information of the tourist spots to be visited in Silang, Cavite."
+
             />
           </Col>
 
@@ -80,11 +91,9 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Pokedex Mobile"
+              description="Just a simple Pokedex app built with React Native. Made it during my free time to get familiarized with the use of API online"
+              
             />
           </Col>
         </Row>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -9,47 +9,63 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
-              <br />
-              <br />
-              I’m proficient in
-              <i>
-                <b className="purple">
-                  {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
-                </b>
-              </i>
-              — and I enjoy working across both backend and frontend stacks.
-              <br />
-              <br />
-              My key areas of interest include developing
-              <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
-                </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
-              <br />
-              <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
-            </p>
-          </Col>
+  <h1 style={{ fontSize: "2.6em" }}>
+    LET ME <span className="purple"> INTRODUCE </span> MYSELF
+  </h1>
+
+  <p className="home-about-body">
+    I’m <b className="purple">Paul Kenneth Dela Cruz</b>, a Web Developer and
+    IT Support Specialist with hands-on experience in building practical,
+    secure, and user-focused digital systems.
+    <br />
+    <br />
+    I recently completed my{" "}
+    <i>
+      <b className="purple">Bachelor of Science in Information Technology</b>
+    </i>{" "}
+    at Far Eastern University, and I have worked on live-hosted systems,
+    mobile applications, QA testing, system deployment, documentation, and
+    user support.
+    <br />
+    <br />
+    I’m experienced in
+    <i>
+      <b className="purple">
+        {" "}
+        Laravel, PHP, MySQL, JavaScript, React Native, Firebase, Leaflet JS,
+        Git, and GitHub{" "}
+      </b>
+    </i>
+    — with a strong interest in both frontend and backend development.
+    <br />
+    <br />
+    My key areas of interest include developing
+    <i>
+      <b className="purple">
+        {" "}
+        Web Applications, Mobile Applications, Management Systems,{" "}
+      </b>
+    </i>
+    and digital solutions that improve business operations and user experience.
+    <br />
+    <br />
+    Some of my deployed projects include the
+    <b className="purple"> Subdivision Management System </b>
+    and the
+    <b className="purple"> Dental Clinic Management System</b>,
+    where I implemented features such as RBAC, MFA, payment tracking,
+    reports, appointments, records management, and interactive system modules.
+    <br />
+    <br />
+    I also have experience in IT support through the
+    <b className="purple"> Unilever Philippines DCODE Rollout Project</b>,
+    where I supported deployment, QA testing, troubleshooting, user training,
+    UAT support, documentation, and issue escalation.
+  </p>
+</Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid rounded-circle" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
